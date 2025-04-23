@@ -26,6 +26,83 @@ This project addresses a common challenge in software development: creating real
 - **🛡️ Security Enhancement**: Keeps testing within a controlled local environment
 - **🔍 Testing Thoroughness**: Facilitates comprehensive testing without affecting production resources
 
+# Getting Started with Automated Test Data Generator
+
+This guide will help you set up and start using the Automated Test Data Generator on your local machine.
+
+## Prerequisites
+
+Before you begin, ensure you have the following installed:
+
+- Python 3.8 or higher
+- pip (Python package installer)
+- Git
+- Docker (for running LocalStack)
+
+## Installation
+
+###  Clone the repository
+
+```bash
+git clone https://github.com/srigeethavegi99/automated-test-data-generator.git
+cd automated-test-data-generator
+```
+
+### Install dependencies
+
+```bash
+pip install streamlit
+pip install boto3
+pip install aws-cli
+```
+
+### Set up LocalStack
+
+Pull and run the LocalStack Docker image:
+Open Docker in Desktop and keep it running
+```bash
+localstack start -d
+```
+
+### Configure environment variables
+
+Create a `.env` file in the project root directory:
+
+
+## Running the Application
+
+Start the Streamlit application:
+
+```bash
+streamlit run main.py
+```
+
+## Basic Usage
+
+1. **Configure Data Schema**: Define the structure of your test data using the intuitive UI
+2. **Set Parameters**: Specify the amount and characteristics of the data you need
+3. **Generate Data**: Click the "Generate" button to create your synthetic dataset
+4. **Export Options**: Download your data in .CSV or store directly in the simulated AWS services
+
+**LLM Integration Problems**:
+- Ensure your API key is correctly set in the `.env` file
+- Check your internet connection as LLM services require online access
+
+### Tools and Libraries
+
+- [Streamlit](https://streamlit.io/) - Used for creating the web interface
+- [LocalStack](https://localstack.cloud/) - AWS service emulation for local development
+- [Faker](https://faker.readthedocs.io/) - Python library for generating fake data
+- [AWS SDK for Python (Boto3)](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html) - For AWS service interaction
+
+### Learning Resources
+
+- [AWS Official Documentation](https://docs.aws.amazon.com/)
+- [LocalStack GitHub Repository](https://github.com/localstack/localstack)
+- [Streamlit Documentation](https://docs.streamlit.io/)
+- [Faker Documentation](https://faker.readthedocs.io/en/master/)
+- [Python Data Generation Patterns](https://realpython.com/generating-random-data-in-python/)
+
 ## 👥 Target Users
 - 👨‍💻 Software Developers
 - 🧪 QA Engineers
