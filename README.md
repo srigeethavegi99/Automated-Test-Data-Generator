@@ -121,7 +121,7 @@ Through developing this project, I gained experience in:
 - **🌐 Web Application Development**: Full-stack integration of frontend and backend components
 
 ## 🎓 Academic Foundations
-This project builds upon knowledge gained from several graduate-level Computer Science courses:
+This project was built upon knowledge gained from several graduate-level Computer Science courses:
 - **🔷 CIS 500 (Fundamentals of Software Practice)**: Applied software development principles and Python expertise
 - **🔷 CIS 612 (Requirements Specification)**: Utilized structured requirements gathering to ensure clear project scope
 - **🔷 CIS 671 (Information Visualization)**: Implemented visualization concepts to enhance data representation
